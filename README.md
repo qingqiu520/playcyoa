@@ -1,5 +1,15 @@
 # PlayCYOA — AI Choose Your Own Adventure
 
+🎮 **Live: https://playcyoa.com**
+
+Choose-your-own-adventure stories where every choice plays a real AI-generated
+video scene (MiniMax H3 via MetaSo). Pre-made branching story trees are free to
+play — write your own premise and each next scene is generated on demand.
+
+Built with Next.js 16 · Tailwind · MiniMax H3 video generation.
+
+---
+
 互动视频故事站：预生成故事树免费玩（边际成本≈0），自定义剧情按次生成（日限额熔断）。
 
 ## 本地跑通
