@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ink text-gray-200 antialiased;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 font-semibold text-ink transition hover:bg-accent2 hover:text-white;
+}
+
+.btn-choice {
+  @apply w-full rounded-xl border border-edge bg-panel px-5 py-4 text-left text-base text-gray-100 transition hover:border-accent hover:bg-[#1a2130] md:text-lg;
+}
+
+.card {
+  @apply rounded-xl border border-edge bg-panel transition hover:border-accent;
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "the-last-signal",
+  "title": "The Last Signal",
+  "genre": "sci-fi",
+  "description": "You're a salvage operator answering a distress beacon in deep space. The beacon's registry matches your own ship — the one you're standing in.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-last-signal/n1.mp4",
+      "caption": "The distress call repeats on a dead frequency. When the wreck resolves on your scope, the hull markings are yours: same ship, same scars.",
+      "choices": [
+        { "label": "Dock with the wreck", "next": "n2a" },
+        { "label": "Scan it from a safe distance", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-last-signal/n2a.mp4",
+      "caption": "The airlock cycles without power. Inside, the corridors are your ship's — but older, dusted, and something has been living in them.",
+      "choices": [
+        { "label": "Head for the bridge", "next": "n3a" },
+        { "label": "Follow the scratching sounds", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-last-signal/n2b.mp4",
+      "caption": "The scan comes back: one life sign aboard the wreck. It's broadcasting your own heartbeat.",
+      "choices": [
+        { "label": "Dock anyway — you need answers", "next": "n2a" },
+        { "label": "Fire your engines and run", "next": "n3c" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-last-signal/n3a.mp4",
+      "caption": "On the bridge, the captain's chair faces away. It turns. It's you — fifty years older, mouthing two words: don't dock.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-last-signal/n3b.mp4",
+      "caption": "The scratching leads to your own quarters. On the wall, written in frost: TURN AROUND. The airlock light behind you is green.",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-last-signal/n3c.mp4",
+      "caption": "Your engines flare — and the wreck flares with them, mirrored exactly. In the rear camera feed, its bridge light comes on. Someone is watching you leave.",
+      "choices": []
+    }
+  }
+}

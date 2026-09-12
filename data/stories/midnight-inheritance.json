@@ -1,0 +1,48 @@
+{
+  "slug": "midnight-inheritance",
+  "title": "The Midnight Inheritance",
+  "genre": "mystery",
+  "description": "A stranger dies and leaves you a manor on the hill. The will has one condition: you must spend the first night inside.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/midnight-inheritance/n1.mp4",
+      "caption": "Rain hammers the windshield as the solicitor hands you a single iron key. The manor waits on the hill.",
+      "choices": [
+        { "label": "Drive up to the manor tonight", "next": "n2a" },
+        { "label": "Read the letter he left you first", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/midnight-inheritance/n2a.mp4",
+      "caption": "The gates open on their own. Inside, eight candles are lit — but the house has been empty for years.",
+      "choices": [
+        { "label": "Follow the candlelight upstairs", "next": "n3a" },
+        { "label": "Search the study for answers", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/midnight-inheritance/n2b.mp4",
+      "caption": "The letter contains one sentence: 'Do not let them know you can see them.'",
+      "choices": [
+        { "label": "Burn the letter and drive up anyway", "next": "n3a" },
+        { "label": "Call the solicitor back", "next": "n3c" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/midnight-inheritance/n3a.mp4",
+      "caption": "At the top of the stairs, a portrait of a woman in black. Her eyes have been scratched out — from the inside of the frame.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/midnight-inheritance/n3b.mp4",
+      "caption": "In the study drawer: a guest list. Every name is crossed out except yours — written in fresh ink.",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/midnight-inheritance/n3c.mp4",
+      "caption": "The solicitor answers on the first ring. 'You opened the letter,' he says. 'Then you already know you're not the heir. You're the invitation.'",
+      "choices": []
+    }
+  }
+}

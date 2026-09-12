@@ -1,0 +1,48 @@
+{
+  "slug": "the-night-shift",
+  "title": "The Night Shift",
+  "genre": "horror",
+  "description": "Last hour of your shift at a roadside diner. A customer walks in — but the mirror behind the counter shows an empty room.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-night-shift/n1.mp4",
+      "caption": "Rain streaks the diner windows. A man in a grey suit sits at table four — but in the mirror behind the counter, his seat is empty.",
+      "choices": [
+        { "label": "Walk over and take his order", "next": "n2a" },
+        { "label": "Keep watching him in the mirror", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-night-shift/n2a.mp4",
+      "caption": "Up close he smells of wet earth. He orders coffee, black, and slides a photograph across the table. It is a photo of you, taken tonight.",
+      "choices": [
+        { "label": "Ask who took the photo", "next": "n3a" },
+        { "label": "Lock yourself in the kitchen", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-night-shift/n2b.mp4",
+      "caption": "In the mirror, the empty seat slowly turns to face you. The real man hasn't moved at all.",
+      "choices": [
+        { "label": "Smash the mirror", "next": "n3c" },
+        { "label": "Run for the door", "next": "n3b" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-night-shift/n3a.mp4",
+      "caption": "'You did,' he says. 'Every night at 3:13. You've been bringing me coffee for six years. Tonight you finally looked at the mirror.'",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-night-shift/n3b.mp4",
+      "caption": "The kitchen door has no lock — only scratches. Hundreds of them, on the inside, all the same depth, all in the shape of tally marks.",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-night-shift/n3c.mp4",
+      "caption": "The mirror shatters. Behind it is not a wall but a dark room — and in it, tables full of people in grey suits, all turning toward you.",
+      "choices": []
+    }
+  }
+}
