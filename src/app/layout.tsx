@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE,
   },
+  verification: {
+    google: "mjiWPzLoqQ2fJvWbXSbyfHeyQP328DMf3ncPguZMtMA",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
