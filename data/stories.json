@@ -16,5 +16,17 @@
     "title": "The Last Signal",
     "genre": "sci-fi",
     "description": "A salvage operator answers a distress beacon in deep space — and the wreck's registry matches their own ship. A branching AI sci-fi adventure."
+  },
+  {
+    "slug": "the-read-receipt",
+    "title": "The Read Receipt",
+    "genre": "romance",
+    "description": "The message you sent three years ago — the one that ended everything — just switched to 'read.' Someone is typing. A branching AI romance adventure."
+  },
+  {
+    "slug": "the-ninth-door",
+    "title": "The Ninth Door",
+    "genre": "fantasy",
+    "description": "Every map of Greykeep shows eight doors in the great hall. This morning there are nine — and the ninth has your name on it. A branching AI fantasy adventure."
   }
 ]

@@ -1,0 +1,48 @@
+{
+  "slug": "the-read-receipt",
+  "title": "The Read Receipt",
+  "genre": "romance",
+  "description": "The message you sent three years ago — the one that ended everything — just switched to 'read.' Someone is typing.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-read-receipt/n1.mp4",
+      "caption": "3:17 AM. The message you sent three years ago — the one that ended everything — just switched to read. Three dots are pulsing.",
+      "choices": [
+        { "label": "Open the reply", "next": "n2a" },
+        { "label": "Put the phone face-down", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-read-receipt/n2a.mp4",
+      "caption": "One line: 'I kept your copy of the key. The garden gate still sticks. — M'",
+      "choices": [
+        { "label": "Drive over tonight", "next": "n3a" },
+        { "label": "Ask why now", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-read-receipt/n2b.mp4",
+      "caption": "You last ten minutes before it buzzes again. A photo: the garden gate, ajar, lit by the porch light you installed yourself.",
+      "choices": [
+        { "label": "Get in the car", "next": "n3a" },
+        { "label": "Type 'I'm not coming'", "next": "n3c" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-read-receipt/n3a.mp4",
+      "caption": "Forty minutes later she's on the porch with two glasses, like no time passed at all. 'You read it this time,' she says.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-read-receipt/n3b.mp4",
+      "caption": "Her reply lands before you finish typing: 'Because the house sells Monday. Whatever we didn't say gets boxed up with it.'",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-read-receipt/n3c.mp4",
+      "caption": "You stare at 'I'm not coming' until the screen dims. Then you delete it and write the truth: 'Be there in forty minutes.'",
+      "choices": []
+    }
+  }
+}

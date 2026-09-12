@@ -1,0 +1,48 @@
+{
+  "slug": "the-ninth-door",
+  "title": "The Ninth Door",
+  "genre": "fantasy",
+  "description": "Every map of Greykeep shows eight doors in the great hall. This morning there are nine — and the ninth has your name carved into the frame.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-ninth-door/n1.mp4",
+      "caption": "Every map of Greykeep shows eight doors in the great hall. This morning there are nine, and the ninth has your name carved into the frame.",
+      "choices": [
+        { "label": "Open the ninth door", "next": "n2a" },
+        { "label": "Find the steward first", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-ninth-door/n2a.mp4",
+      "caption": "Beyond it: a library where every book is your life, written in hands that aren't yours. One volume on the desk is still being written.",
+      "choices": [
+        { "label": "Read the last page", "next": "n3a" },
+        { "label": "Take the unfinished book", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-ninth-door/n2b.mp4",
+      "caption": "The steward goes pale. 'When the castle grows a door with your name, it is asking a question. Only you can answer it.'",
+      "choices": [
+        { "label": "Go back and open it", "next": "n2a" },
+        { "label": "Demand to know the question", "next": "n3c" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-ninth-door/n3a.mp4",
+      "caption": "The last page is blank except one line: 'You may stop reading whenever you choose to start writing.' The quill beside it is still warm.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-ninth-door/n3b.mp4",
+      "caption": "You lift the unfinished book — and the shelves of your life begin unwriting themselves, spines going blank one by one.",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-ninth-door/n3c.mp4",
+      "caption": "'The question,' the steward whispers, 'is whether you want to know how your story ends. Those who open it never return the same.'",
+      "choices": []
+    }
+  }
+}
