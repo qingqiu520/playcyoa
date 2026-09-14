@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   verification: {
     google: "mjiWPzLoqQ2fJvWbXSbyfHeyQP328DMf3ncPguZMtMA",
   },
+  other: {
+    "waffo-verify": "a8269b6e4f2dadaf3f3e0ae016279209",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
