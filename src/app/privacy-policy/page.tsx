@@ -10,8 +10,8 @@ const sections: { h: string; body: React.ReactNode }[] = [
     h: "1. Data Controller",
     body: (
       <p>
-        The data controller for this service is PlayCYOA, operated by [YOUR
-        LEGAL NAME], an individual operator. Privacy contact: [YOUR EMAIL]. If
+        The data controller for this service is PlayCYOA, operated by JIANG,
+        JUNLIN, an individual operator. Privacy contact: lelea031210@gmail.com. If
         a section of this policy does not apply to your use, it is because the
         service does not perform that processing.
       </p>
@@ -70,21 +70,20 @@ const sections: { h: string; body: React.ReactNode }[] = [
         </p>
         <ul className="list-disc space-y-1 pl-5">
           <li>
-            <strong className="text-gray-200">Waffo Pancake</strong> — payment
+            <strong className="text-gray-200">Waffo Pancake</strong> �?payment
             processing. Card data is handled exclusively by Waffo Pancake under
             PCI-DSS and is never stored on our servers.
           </li>
           <li>
-            <strong className="text-gray-200">AI generation providers</strong> —
-            your prompts are sent to third-party AI video/story providers solely
+            <strong className="text-gray-200">AI generation providers</strong> �?            your prompts are sent to third-party AI video/story providers solely
             to generate your requested scenes.
           </li>
           <li>
-            <strong className="text-gray-200">Vercel</strong> — hosting and
+            <strong className="text-gray-200">Vercel</strong> �?hosting and
             content delivery.
           </li>
           <li>
-            <strong className="text-gray-200">Google AdSense</strong> — if ads
+            <strong className="text-gray-200">Google AdSense</strong> �?if ads
             are shown (see its privacy policy).
           </li>
         </ul>
@@ -108,7 +107,7 @@ const sections: { h: string; body: React.ReactNode }[] = [
       <p>
         Depending on your jurisdiction (including GDPR and CCPA), you may
         request access, correction, deletion, restriction, portability, or
-        object to processing of your personal data. Email [YOUR EMAIL] and we
+        object to processing of your personal data. Email lelea031210@gmail.com and we
         will respond within 30 days. You may also lodge a complaint with your
         local data protection authority.
       </p>
@@ -147,7 +146,7 @@ const sections: { h: string; body: React.ReactNode }[] = [
     h: "11. Contact",
     body: (
       <p>
-        PlayCYOA — operated by [YOUR LEGAL NAME]. Email: [YOUR EMAIL]. Website:
+        PlayCYOA �?operated by JIANG, JUNLIN. Email: lelea031210@gmail.com. Website:
         https://playcyoa.com
       </p>
     ),

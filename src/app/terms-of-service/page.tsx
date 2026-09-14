@@ -12,7 +12,7 @@ const sections: { h: string; body: React.ReactNode }[] = [
     body: (
       <p>
         Welcome to PlayCYOA (&quot;we&quot;, &quot;the Service&quot;), an
-        interactive fiction platform operated by [YOUR LEGAL NAME], an
+        interactive fiction platform operated by JIANG, JUNLIN, an
         individual operator, accessible at https://playcyoa.com. By using the
         Service or purchasing credits you confirm that you are at least 18
         years old, have read and agree to these Terms, and agree to our{" "}
@@ -69,8 +69,8 @@ const sections: { h: string; body: React.ReactNode }[] = [
     h: "5. Refund Policy",
     body: (
       <p>
-        Unused credits are refundable within 14 days of purchase â€” contact
-        [YOUR EMAIL] and we will refund the unused portion to the original
+        Unused credits are refundable within 14 days of purchase â€?contact
+        lelea031210@gmail.com and we will refund the unused portion to the original
         payment method. Credits already consumed, and scenes already
         generated, are non-refundable due to the instant digital nature of the
         Service. This policy is also shown at checkout.
@@ -93,7 +93,7 @@ const sections: { h: string; body: React.ReactNode }[] = [
     h: "7. Billing Disputes",
     body: (
       <p>
-        If you believe a charge is incorrect, contact [YOUR EMAIL] before
+        If you believe a charge is incorrect, contact lelea031210@gmail.com before
         opening a dispute with your bank. We respond within 2 business days and
         resolve confirmed billing errors within 5 business days.
       </p>
@@ -169,9 +169,9 @@ const sections: { h: string; body: React.ReactNode }[] = [
     body: (
       <p>
         These Terms are governed by applicable law in the operator&apos;s
-        jurisdiction. Before filing any formal proceeding, email [YOUR EMAIL]
+        jurisdiction. Before filing any formal proceeding, email lelea031210@gmail.com
         to attempt informal resolution. We may update these Terms with at least
-        14 days&apos; notice for material changes. Questions: [YOUR EMAIL].
+        14 days&apos; notice for material changes. Questions: lelea031210@gmail.com.
       </p>
     ),
   },
