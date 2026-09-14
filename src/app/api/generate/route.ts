@@ -1,11 +1,25 @@
 import { createVideo, pollVideo } from "~/lib/provider";
 import { tryConsumeGeneration } from "~/lib/quota";
+import { scanPromptSafety } from "~/lib/safety";
 
 // POST /api/generate  { prompt } -> { taskId } | { status: 603, msg } 配额用尽
 export async function POST(req: Request) {
   const { prompt } = await req.json();
   if (!prompt || typeof prompt !== "string" || prompt.length > 1500) {
     return Response.json({ msg: "invalid prompt", status: 400 });
+  }
+  const safety = await scanPromptSafety(prompt);
+  if (safety === "block") {
+    return Response.json({
+      msg: "This prompt doesn't meet our content guidelines — try a different premise.",
+      status: 451,
+    });
+  }
+  if (safety === "review") {
+    return Response.json({
+      msg: "This prompt needs a moment to be checked — please try again shortly.",
+      status: 429,
+    });
   }
   const q = tryConsumeGeneration();
   if (!q.ok) {
