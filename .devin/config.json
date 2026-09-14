@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(src/**)",
+      "Write(data/**)",
+      "Write(scripts/**)",
+      "Write(docs/**)",
+      "Write(public/**)",
+      "Exec(npm)",
+      "Exec(npx)",
+      "Exec(git)",
+      "Exec(node)",
+      "Exec(python)",
+      "Exec(pip)",
+      "Exec(ffmpeg)",
+      "Exec(Get-)",
+      "Exec(Select-)",
+      "Exec(Start-Sleep)",
+      "Exec(Invoke-WebRequest)",
+      "Exec(cd)",
+      "Exec(echo)",
+      "Exec(dir)",
+      "Exec(Test-NetConnection)"
+    ],
+    "deny": [
+      "Exec(rm)",
+      "Exec(sudo)",
+      "Write(.env*)"
+    ]
+  }
+}
