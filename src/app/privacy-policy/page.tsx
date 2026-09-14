@@ -75,9 +75,11 @@ const sections: { h: string; body: React.ReactNode }[] = [
             under PCI-DSS and is never stored on our servers.
           </li>
           <li>
-            <strong className="text-gray-200">AI generation providers</strong>{" "}
-            — your prompts are sent to third-party AI video/story providers
-            solely to generate your requested scenes.
+            <strong className="text-gray-200">
+              AI generation providers (MiniMax H3 via MetaSo)
+            </strong>{" "}
+            — your prompts are sent to these providers solely to generate your
+            requested scenes.
           </li>
           <li>
             <strong className="text-gray-200">Vercel</strong> — hosting and
