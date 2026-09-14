@@ -12,10 +12,10 @@ const sections: { h: string; body: React.ReactNode }[] = [
     body: (
       <p>
         Welcome to PlayCYOA (&quot;we&quot;, &quot;the Service&quot;), an
-        interactive fiction platform operated by JIANG, JUNLIN, an
-        individual operator, accessible at https://playcyoa.com. By using the
-        Service or purchasing credits you confirm that you are at least 18
-        years old, have read and agree to these Terms, and agree to our{" "}
+        interactive fiction platform operated by JIANG, JUNLIN, an individual
+        operator, accessible at https://playcyoa.com. By using the Service or
+        purchasing credits you confirm that you are at least 18 years old,
+        have read and agree to these Terms, and agree to our{" "}
         <Link href="/privacy-policy" className="text-accent underline">
           Privacy Policy
         </Link>
@@ -29,11 +29,11 @@ const sections: { h: string; body: React.ReactNode }[] = [
     body: (
       <p>
         PlayCYOA provides interactive choose-your-own-adventure stories in
-        which each choice renders an AI-generated video scene. The Service is a
-        digital, intangible product delivered over the internet. Pre-made
+        which each choice renders an AI-generated video scene. The Service is
+        a digital, intangible product delivered over the internet. Pre-made
         adventures are free; custom scene generation consumes purchased
-        credits. The Service relies on third-party AI model providers for scene
-        generation, and availability may be affected by those providers.
+        credits. The Service relies on third-party AI model providers for
+        scene generation, and availability may be affected by those providers.
       </p>
     ),
   },
@@ -57,10 +57,11 @@ const sections: { h: string; body: React.ReactNode }[] = [
           expire and are tied to the email used at purchase.
         </p>
         <p>
-          Payments are processed by <strong className="text-gray-200">Waffo
-          Pancake</strong>, our merchant of record, which is the legal seller
-          of your purchase and handles taxes and card processing. Prices are
-          shown at checkout before you pay.
+          Payments are processed by{" "}
+          <strong className="text-gray-200">Waffo Pancake</strong>, our
+          merchant of record, which is the legal seller of your purchase and
+          handles taxes and card processing. Prices are shown at checkout
+          before you pay.
         </p>
       </>
     ),
@@ -69,9 +70,9 @@ const sections: { h: string; body: React.ReactNode }[] = [
     h: "5. Refund Policy",
     body: (
       <p>
-        Unused credits are refundable within 14 days of purchase �?contact
-        lelea031210@gmail.com and we will refund the unused portion to the original
-        payment method. Credits already consumed, and scenes already
+        Unused credits are refundable within 14 days of purchase — contact
+        lelea031210@gmail.com and we will refund the unused portion to the
+        original payment method. Credits already consumed, and scenes already
         generated, are non-refundable due to the instant digital nature of the
         Service. This policy is also shown at checkout.
       </p>
@@ -93,9 +94,9 @@ const sections: { h: string; body: React.ReactNode }[] = [
     h: "7. Billing Disputes",
     body: (
       <p>
-        If you believe a charge is incorrect, contact lelea031210@gmail.com before
-        opening a dispute with your bank. We respond within 2 business days and
-        resolve confirmed billing errors within 5 business days.
+        If you believe a charge is incorrect, contact lelea031210@gmail.com
+        before opening a dispute with your bank. We respond within 2 business
+        days and resolve confirmed billing errors within 5 business days.
       </p>
     ),
   },
@@ -169,9 +170,10 @@ const sections: { h: string; body: React.ReactNode }[] = [
     body: (
       <p>
         These Terms are governed by applicable law in the operator&apos;s
-        jurisdiction. Before filing any formal proceeding, email lelea031210@gmail.com
-        to attempt informal resolution. We may update these Terms with at least
-        14 days&apos; notice for material changes. Questions: lelea031210@gmail.com.
+        jurisdiction. Before filing any formal proceeding, email
+        lelea031210@gmail.com to attempt informal resolution. We may update
+        these Terms with at least 14 days&apos; notice for material changes.
+        Questions: lelea031210@gmail.com.
       </p>
     ),
   },
@@ -181,7 +183,9 @@ export default function Terms() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 text-gray-400">
       <h1 className="mb-2 text-3xl font-bold text-white">Terms of Service</h1>
-      <p className="mb-8 text-sm">Last updated: September 14, 2026 · Version 1.0</p>
+      <p className="mb-8 text-sm">
+        Last updated: September 14, 2026 · Version 1.0
+      </p>
       {sections.map((s) => (
         <section key={s.h} className="mb-6">
           <h2 className="mb-2 text-lg font-semibold text-gray-200">{s.h}</h2>
