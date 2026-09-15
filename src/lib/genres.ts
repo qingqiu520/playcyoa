@@ -49,6 +49,16 @@ export const GENRES: GenreMeta[] = [
       "A crown nobody should wear. A dungeon that rebuilds itself. Choose a fantasy adventure and the world renders around your decisions — one generated scene at a time.",
   },
   {
+    slug: "thriller",
+    name: "Thriller",
+    title: "AI Thriller Choose Your Own Adventure — Interactive Suspense Stories",
+    description:
+      "Play AI thriller choose your own adventure stories. Wrong suitcases, ticking clocks, strangers who know your name — every choice generates the next scene.",
+    h1: "AI Thriller Choose Your Own Adventure",
+    intro:
+      "Twelve hours on the clock and a suitcase that isn't yours. In these AI thriller adventures, every choice is rendered as a cinematic scene — run, hide, or pick up the phone, and watch what your nerve gets you.",
+  },
+  {
     slug: "mystery",
     name: "Mystery",
     title: "AI Mystery Choose Your Own Adventure — Interactive Detective Stories",

@@ -1,0 +1,53 @@
+{
+  "slug": "the-wrong-suitcase",
+  "title": "The Wrong Suitcase",
+  "genre": "thriller",
+  "description": "At baggage claim you grab the suitcase identical to yours. Inside: two million in cash, a ringing phone, and a boarding pass with your name on it.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-wrong-suitcase/n1.mp4",
+      "caption": "The suitcase looks exactly like yours. Inside your hotel room you unzip it — and find two million in cash, a phone that starts ringing, and a boarding pass printed with your name.",
+      "choices": [
+        { "label": "Answer the ringing phone", "next": "n2a" },
+        { "label": "Take the suitcase back to the airport", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-wrong-suitcase/n2a.mp4",
+      "caption": "A flat voice: 'Terminal 3, locker 47, twelve hours. Return it and the boarding pass stays a mistake. Keep it — and that name on it becomes yours forever.'",
+      "choices": [
+        { "label": "Go to locker 47", "next": "n3a" },
+        { "label": "Call the police instead", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-wrong-suitcase/n2b.mp4",
+      "caption": "The carousel is empty now. Across the hall a man in a grey coat is holding your actual suitcase — and walking straight toward you, smiling like you are old friends.",
+      "choices": [
+        { "label": "Confront him in the open hall", "next": "n3c" },
+        { "label": "Hide and follow him", "next": "n3d" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-wrong-suitcase/n3a.mp4",
+      "caption": "Locker 47 clicks open. Inside: a passport with your photo and a name you've never heard — and a ticket for a flight that boards tomorrow at dawn.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-wrong-suitcase/n3b.mp4",
+      "caption": "The detective unzips the suitcase on the station table. It's empty — except for a boarding pass dated yesterday, in your name, for a flight you never took.",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-wrong-suitcase/n3c.mp4",
+      "caption": "He stops ten feet away and sets your suitcase down gently. 'You opened it,' he says. 'That means you chose.' Then he turns and disappears into the crowd.",
+      "choices": []
+    },
+    "n3d": {
+      "video": "/videos/the-wrong-suitcase/n3d.mp4",
+      "caption": "He leads you through the terminal to a quiet gate where a plane is boarding — no destination on the board. He holds out a ticket and waits.",
+      "choices": []
+    }
+  }
+}

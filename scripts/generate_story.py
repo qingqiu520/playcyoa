@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 PlayCYOA 故事树离线生成器
 用法:
@@ -87,7 +87,7 @@ def gen_video(prompt, out_file: Path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--slug", required=True)
-    ap.add_argument("--genre", default="", choices=["", "horror", "sci-fi", "romance", "fantasy", "mystery"])
+    ap.add_argument("--genre", default="", choices=["", "horror", "sci-fi", "romance", "fantasy", "mystery", "thriller", "adventure", "survival"])
     ap.add_argument("--premise", default="")
     ap.add_argument("--title", default="")
     ap.add_argument("--depth", type=int, default=3, help="分支深度，深度d树共 2^d-1 段视频")
@@ -157,3 +157,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
