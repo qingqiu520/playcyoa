@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { GENRES } from "~/lib/genres";
 
 const inter = Inter({ subsets: ["latin"] });
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://playcyoa.com";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://www.playcyoa.com";
 const NAME = process.env.NEXT_PUBLIC_WEBSITE_NAME || "PlayCYOA";
 
 export const metadata: Metadata = {
@@ -91,3 +91,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
