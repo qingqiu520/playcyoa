@@ -1,0 +1,53 @@
+{
+  "slug": "the-49th-passenger",
+  "title": "The 49th Passenger",
+  "genre": "survival",
+  "description": "You wash ashore after the crash with the flight manifest in your pocket: 48 passengers. But the beach holds 49 sets of footprints — and one trail leads into the jungle.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-49th-passenger/n1.mp4",
+      "caption": "You wake face-down on wet sand, the flight manifest still clutched in your fist: 48 passengers. But the beach holds 49 sets of footprints — and one trail leads into the jungle.",
+      "choices": [
+        { "label": "Follow the extra trail", "next": "n2a" },
+        { "label": "Search the wreckage for supplies", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-49th-passenger/n2a.mp4",
+      "caption": "The trail ends at a bunker hatch half-buried in roots. Fresh cigarette smoke rises from its vent — someone has been living down there, and they smoked one an hour ago.",
+      "choices": [
+        { "label": "Knock on the hatch", "next": "n3a" },
+        { "label": "Open it quietly", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-49th-passenger/n2b.mp4",
+      "caption": "In the tail section you find a sealed emergency kit — and a second manifest, identical to yours, except for one thing: passenger 49 is listed, and the name is yours.",
+      "choices": [
+        { "label": "Go find the bunker", "next": "n3c" },
+        { "label": "Burn both manifests", "next": "n3d" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-49th-passenger/n3a.mp4",
+      "caption": "The hatch swings open. A woman in a captain's jacket looks you up and down and sighs: 'You're early. The plane doesn't arrive for another three days.'",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-49th-passenger/n3b.mp4",
+      "caption": "Inside: bunks, a radio still warm — and a wall covered in manifests. Every one ends in a crash. Every one lists exactly 49 names.",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-49th-passenger/n3c.mp4",
+      "caption": "The bunker door is already open. On the table sit two cups of coffee, still steaming, and a note in careful handwriting: 'We counted too.'",
+      "choices": []
+    },
+    "n3d": {
+      "video": "/videos/the-49th-passenger/n3d.mp4",
+      "caption": "The manifests curl and burn to black. Behind you the jungle goes silent — every bird stops at once, like something just noticed you.",
+      "choices": []
+    }
+  }
+}

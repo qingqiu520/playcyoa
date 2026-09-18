@@ -34,5 +34,11 @@
     "title": "The Wrong Suitcase",
     "genre": "thriller",
     "description": "At baggage claim you grab the suitcase identical to yours. Inside: two million in cash, a ringing phone, and a boarding pass with your name on it. A branching AI thriller adventure."
+  },
+  {
+    "slug": "the-49th-passenger",
+    "title": "The 49th Passenger",
+    "genre": "survival",
+    "description": "You wash ashore after the crash with the flight manifest in your pocket: 48 passengers. But the beach holds 49 sets of footprints — and one trail leads into the jungle. A branching AI survival adventure."
   }
 ]

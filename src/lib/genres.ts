@@ -59,6 +59,16 @@ export const GENRES: GenreMeta[] = [
       "Twelve hours on the clock and a suitcase that isn't yours. In these AI thriller adventures, every choice is rendered as a cinematic scene — run, hide, or pick up the phone, and watch what your nerve gets you.",
   },
   {
+    slug: "survival",
+    name: "Survival",
+    title: "AI Survival Choose Your Own Adventure — Interactive Survival Stories",
+    description:
+      "Play AI survival choose your own adventure stories. Crash-landed, stranded, hunted — every choice generates the next cinematic scene of your escape.",
+    h1: "AI Survival Choose Your Own Adventure",
+    intro:
+      "The beach is quiet and the manifest doesn't add up. In these AI survival adventures, every choice becomes a generated cinematic scene — forage, follow, or burn the evidence, and see how long you last.",
+  },
+  {
     slug: "mystery",
     name: "Mystery",
     title: "AI Mystery Choose Your Own Adventure — Interactive Detective Stories",
