@@ -1,10 +1,12 @@
 import { createVideo, pollVideo } from "~/lib/provider";
 import { tryConsumeGeneration } from "~/lib/quota";
 import { scanPromptSafety } from "~/lib/safety";
+import { consumeCredit } from "~/lib/credits";
+import { redisConfigured } from "~/lib/redis";
 
-// POST /api/generate  { prompt } -> { taskId } | { status: 603, msg } 配额用尽
+// POST /api/generate  { prompt, credit_code? } -> { taskId } | { status: 603, msg } 配额用尽
 export async function POST(req: Request) {
-  const { prompt } = await req.json();
+  const { prompt, credit_code } = await req.json();
   if (!prompt || typeof prompt !== "string" || prompt.length > 1500) {
     return Response.json({ msg: "invalid prompt", status: 400 });
   }
@@ -21,16 +23,26 @@ export async function POST(req: Request) {
       status: 429,
     });
   }
-  const q = tryConsumeGeneration();
-  if (!q.ok) {
-    return Response.json({
-      msg: "Today's creation quota is full — new scenes open tomorrow.",
-      status: 603,
-    });
+  // 有兑换码则优先扣积分（跳过每日配额）；无码走免费配额。
+  let paidBalance: number | null = null;
+  if (credit_code && typeof credit_code === "string" && redisConfigured()) {
+    const c = await consumeCredit(credit_code);
+    if (c.ok) {
+      paidBalance = c.balance;
+    }
+  }
+  if (paidBalance === null) {
+    const q = tryConsumeGeneration();
+    if (!q.ok) {
+      return Response.json({
+        msg: "Today's creation quota is full — new scenes open tomorrow.",
+        status: 603,
+      });
+    }
   }
   try {
     const { taskId } = await createVideo(prompt);
-    return Response.json({ taskId });
+    return Response.json({ taskId, creditsLeft: paidBalance ?? undefined });
   } catch (e: any) {
     return Response.json({ msg: e?.message || "create failed", status: 500 });
   }

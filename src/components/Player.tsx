@@ -40,9 +40,16 @@ export default function Player({
     setChoices(null);
     setError("");
     try {
+      const creditCode =
+        typeof window !== "undefined"
+          ? localStorage.getItem("cyoa_credit_code")
+          : null;
       const r = await fetch("/api/generate", {
         method: "POST",
-        body: JSON.stringify({ prompt: `${STYLE} ${prompt}` }),
+        body: JSON.stringify({
+          prompt: `${STYLE} ${prompt}`,
+          ...(creditCode ? { credit_code: creditCode } : {}),
+        }),
       });
       const data = await r.json();
       if (data.status === 603) {

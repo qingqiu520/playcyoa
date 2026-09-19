@@ -78,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="border-t border-edge py-8 text-center text-sm text-gray-500">
           <div className="mb-2 flex justify-center gap-6">
             <Link href="/pricing" className="hover:text-gray-300">Pricing</Link>
+            <Link href="/credits/redeem" className="hover:text-gray-300">Credits</Link>
             <Link href="/about" className="hover:text-gray-300">About</Link>
             <Link href="/privacy-policy" className="hover:text-gray-300">Privacy</Link>
             <Link href="/terms-of-service" className="hover:text-gray-300">Terms</Link>

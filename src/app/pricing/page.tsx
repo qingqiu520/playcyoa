@@ -46,11 +46,29 @@ export default function Pricing() {
             <li>Credits never expire</li>
             <li>Skip the daily free-quota limit</li>
           </ul>
-          <p className="rounded-lg border border-edge px-4 py-2 text-center text-sm text-gray-400">
-            Checkout opens soon — payments processed by Waffo Pancake
-          </p>
+          {process.env.NEXT_PUBLIC_WAFFO_CHECKOUT_URL ? (
+            <a
+              href={process.env.NEXT_PUBLIC_WAFFO_CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary block text-center text-sm"
+            >
+              Buy 30 credits — $4.99
+            </a>
+          ) : (
+            <p className="rounded-lg border border-edge px-4 py-2 text-center text-sm text-gray-400">
+              Checkout opens soon — payments processed by Waffo Pancake
+            </p>
+          )}
         </div>
       </div>
+
+      <p className="mt-6 text-center text-sm text-gray-500">
+        Already have a code?{" "}
+        <Link href="/credits/redeem" className="text-accent underline">
+          Check your credit balance
+        </Link>
+      </p>
 
       <div className="mt-10 space-y-4 text-sm text-gray-400">
         <h2 className="text-lg font-semibold text-white">How credits work</h2>
