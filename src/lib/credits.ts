@@ -39,6 +39,8 @@ export async function issueCodeForOrder(
     };
     const ok = await redis.setnx(`code:${code}`, JSON.stringify(wallet));
     if (ok === 1) {
+      // 权威余额用独立计数器，扣减走 INCRBY 保证原子性
+      await redis.set(`bal:${code}`, String(credits));
       await redis.set(`order:${orderId}`, code);
       return code;
     }
@@ -51,10 +53,14 @@ export async function codeForOrder(orderId: string): Promise<string | null> {
 }
 
 export async function getWallet(code: string): Promise<CreditWallet | null> {
-  const raw = await redis.get(`code:${code.toUpperCase().trim()}`);
+  const c = code.toUpperCase().trim();
+  const raw = await redis.get(`code:${c}`);
   if (!raw) return null;
   try {
-    return JSON.parse(raw) as CreditWallet;
+    const w = JSON.parse(raw) as CreditWallet;
+    const bal = await redis.get(`bal:${c}`);
+    if (bal !== null) w.balance = Number(bal); // 以计数器为准
+    return w;
   } catch {
     return null;
   }
@@ -68,20 +74,26 @@ export async function voidCodeForOrder(orderId: string): Promise<boolean> {
   if (!w) return false;
   w.balance = 0;
   await redis.set(`code:${code}`, JSON.stringify(w));
+  await redis.set(`bal:${code}`, "0");
   return true;
 }
 
-// 原子扣减：余额不足返回 false；成功后把新余额写回。
+// 原子扣减：对 bal:{code} 做 INCRBY -1；扣到负数说明本来就没余额，加回去并失败。
 export async function consumeCredit(code: string): Promise<{
   ok: boolean;
   balance: number;
 }> {
-  const key = `code:${code.toUpperCase().trim()}`;
-  // 简单实现：读-改-写。并发消耗同一码有极小竞态，
-  // 但单用户串行使用场景可接受（严格原子可换 Lua/INCR 余额字段）。
+  const key = `bal:${code.toUpperCase().trim()}`;
+  const after = await redis.incrby(key, -1);
+  if (after < 0) {
+    await redis.incrby(key, 1); // 回滚
+    return { ok: false, balance: 0 };
+  }
+  // 同步钱包 JSON 里的展示余额（尽力而为，权威是 bal: 计数器）
   const w = await getWallet(code);
-  if (!w || w.balance <= 0) return { ok: false, balance: w?.balance ?? 0 };
-  w.balance -= 1;
-  await redis.set(key, JSON.stringify(w));
-  return { ok: true, balance: w.balance };
+  if (w) {
+    w.balance = after;
+    await redis.set(`code:${code.toUpperCase().trim()}`, JSON.stringify(w));
+  }
+  return { ok: true, balance: after };
 }
