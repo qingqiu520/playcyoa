@@ -60,6 +60,17 @@ export async function getWallet(code: string): Promise<CreditWallet | null> {
   }
 }
 
+// 退款作废：把该订单的兑换码余额清零。
+export async function voidCodeForOrder(orderId: string): Promise<boolean> {
+  const code = await redis.get(`order:${orderId}`);
+  if (!code) return false;
+  const w = await getWallet(code);
+  if (!w) return false;
+  w.balance = 0;
+  await redis.set(`code:${code}`, JSON.stringify(w));
+  return true;
+}
+
 // 原子扣减：余额不足返回 false；成功后把新余额写回。
 export async function consumeCredit(code: string): Promise<{
   ok: boolean;
