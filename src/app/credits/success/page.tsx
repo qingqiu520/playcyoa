@@ -10,9 +10,16 @@ function SuccessInner() {
     params.get("orderId") ||
     params.get("order_id") ||
     params.get("order") ||
+    params.get("orderUuid") ||
+    params.get("order_uuid") ||
     params.get("id") ||
+    params.get("sessionId") ||
+    params.get("session_id") ||
     "";
-  const [state, setState] = useState<"loading" | "ready" | "error">("loading");
+  const [manualId, setManualId] = useState("");
+  const [state, setState] = useState<"loading" | "ready" | "error">(
+    orderId ? "loading" : "error"
+  );
   const [code, setCode] = useState("");
   const [copied, setCopied] = useState(false);
 
@@ -88,9 +95,38 @@ function SuccessInner() {
           <h1 className="mb-4 text-3xl font-bold text-white">
             Almost there…
           </h1>
-          <p className="mb-6 text-gray-400">
-            If your payment completed, your credit code is on its way — email
-            us at{" "}
+          <p className="mb-4 text-gray-400">
+            Paste your order ID (from your receipt email or the Waffo order
+            page) to retrieve your code:
+          </p>
+          <div className="mb-6 flex justify-center gap-2">
+            <input
+              value={manualId}
+              onChange={(e) => setManualId(e.target.value)}
+              placeholder="Order ID"
+              className="input-date w-64 font-mono text-sm"
+            />
+            <button
+              onClick={async () => {
+                const r = await fetch(
+                  `/api/credits/order?id=${encodeURIComponent(manualId.trim())}`
+                );
+                if (r.ok) {
+                  const d = await r.json();
+                  setCode(d.code);
+                  localStorage.setItem("cyoa_credit_code", d.code);
+                  setState("ready");
+                } else {
+                  alert("No code found for that order yet — try again in a minute.");
+                }
+              }}
+              className="btn-primary text-sm"
+            >
+              Get my code
+            </button>
+          </div>
+          <p className="mb-6 text-sm text-gray-500">
+            Still stuck? Email us at{" "}
             <a href="mailto:lelea031210@gmail.com" className="text-accent underline">
               lelea031210@gmail.com
             </a>{" "}
