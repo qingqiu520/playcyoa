@@ -1,0 +1,53 @@
+{
+  "slug": "the-alibi-photograph",
+  "title": "The Alibi Photograph",
+  "genre": "mystery",
+  "description": "Clearing out your late father's attic, you find a dated photograph from a murder scene twenty years ago — and in the crowd behind the police tape, unmistakably, stands you.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-alibi-photograph/n1.mp4",
+      "caption": "In your father's dusty attic you find a yellowed photograph: police tape, a crowd, a murder scene dated twenty years ago — and there in the crowd, wearing the jacket you own, is you.",
+      "choices": [
+        { "label": "Track down the photographer", "next": "n2a" },
+        { "label": "Take it to the police", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-alibi-photograph/n2a.mp4",
+      "caption": "The photographer's studio is still open, the darkroom light burning red. On the drying line hang hundreds of prints from different decades — and your face is in every single one.",
+      "choices": [
+        { "label": "Confront the photographer", "next": "n3a" },
+        { "label": "Take your photos and run", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-alibi-photograph/n2b.mp4",
+      "caption": "The detective studies the photo, then looks up at you slowly. She opens a drawer and slides an identical print across the desk: 'It's evidence in an open case. We've been waiting for you.'",
+      "choices": [
+        { "label": "Ask what case this is", "next": "n3c" },
+        { "label": "Run", "next": "n3d" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-alibi-photograph/n3a.mp4",
+      "caption": "The photographer turns from the enlarger. The face is older, lined — but unmistakably yours. 'You're right on schedule,' they say, reaching for a camera.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-alibi-photograph/n3b.mp4",
+      "caption": "You burn every print in a trash can and drive home shaking — but your mailbox holds a fresh envelope. Inside: the same photograph, and the date stamped on the back is tomorrow.",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-alibi-photograph/n3c.mp4",
+      "caption": "'The murder in that photo was never solved — until someone walked in twenty years later and solved it.' She taps the file. 'The case file says the detective was you.'",
+      "choices": []
+    },
+    "n3d": {
+      "video": "/videos/the-alibi-photograph/n3d.mp4",
+      "caption": "You sprint for your car — but in the rearview mirror, lit by the studio window, you see someone inside already feeding photos into a fire. It's you, and they're smiling.",
+      "choices": []
+    }
+  }
+}
