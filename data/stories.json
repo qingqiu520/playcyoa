@@ -46,5 +46,11 @@
     "title": "The Alibi Photograph",
     "genre": "mystery",
     "description": "Clearing out your late father's attic, you find a dated photograph from a murder scene twenty years ago — and in the crowd behind the police tape, unmistakably, stands you."
+  },
+  {
+    "slug": "space-opera-the-hollow-fleet",
+    "title": "Space Opera: The Hollow Fleet",
+    "genre": "sci-fi",
+    "description": "Your freighter drops out of hyperspace into the path of the Hollow Fleet — the armada that glassed your homeworld. One escape pod, one working ship, and a broadcast: 'Survivor, we know you're there.'"
   }
 ]

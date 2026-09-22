@@ -1,0 +1,53 @@
+{
+  "slug": "space-opera-the-hollow-fleet",
+  "title": "Space Opera: The Hollow Fleet",
+  "genre": "sci-fi",
+  "description": "Your freighter drops out of hyperspace into the path of the Hollow Fleet — the armada that glassed your homeworld. One escape pod, one working ship, and a broadcast: 'Survivor, we know you're there.'",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/space-opera-the-hollow-fleet/n1.mp4",
+      "caption": "Your freighter's sensors scream — the Hollow Fleet, the armada that glassed your homeworld, fills the viewport. One escape pod left. And a broadcast on every channel: 'Survivor, we know you're there.'",
+      "choices": [
+        { "label": "Answer the broadcast", "next": "n2a" },
+        { "label": "Run for the escape pod", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/space-opera-the-hollow-fleet/n2a.mp4",
+      "caption": "The channel opens to the face from your nightmares — the Admiral herself. 'We didn't destroy your world,' she says calmly. 'Your government did. We have the recordings.'",
+      "choices": [
+        { "label": "Demand she prove it", "next": "n3a" },
+        { "label": "Cut the channel and run", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/space-opera-the-hollow-fleet/n2b.mp4",
+      "caption": "The pod punches through the debris field — and you see it: your 'destroyed' homeworld glowing intact on the horizon, hidden behind a continent-sized holographic shroud.",
+      "choices": [
+        { "label": "Slingshot toward the planet", "next": "n3c" },
+        { "label": "Aim for the jump gate", "next": "n3d" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/space-opera-the-hollow-fleet/n3a.mp4",
+      "caption": "She uploads the recording: your world's leaders signing the glassing order — a staged attack to unite the colonies into a war they wanted. The fleet wasn't hunting you. It was hunting the truth.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/space-opera-the-hollow-fleet/n3b.mp4",
+      "caption": "You cut the channel — and in the silence, your nav computer quietly deletes a hidden file titled EVIDENCE_DO_NOT_OPEN. Someone put it there. Someone you trusted.",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/space-opera-the-hollow-fleet/n3c.mp4",
+      "caption": "You descend through the shroud onto living streets — cities lit, people walking — and on every public screen, your own face, captioned: 'the traitor who sold us to the fleet.'",
+      "choices": []
+    },
+    "n3d": {
+      "video": "/videos/space-opera-the-hollow-fleet/n3d.mp4",
+      "caption": "The jump gate spins open — and out of it pour hundreds of freighters identical to yours, each broadcasting in your own voice: 'Survivor, we know you're there.'",
+      "choices": []
+    }
+  }
+}
