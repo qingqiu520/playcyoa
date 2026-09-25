@@ -1,0 +1,53 @@
+{
+  "slug": "the-third-floor",
+  "title": "The Third Floor",
+  "genre": "horror",
+  "description": "At 3:07 AM your elevator stops at a floor that isn't on the panel — your building has no third floor. The doors open onto your hallway, older, and every door stands open except one.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-third-floor/n1.mp4",
+      "caption": "3:07 AM. Your elevator stops at a floor that isn't on the panel — your building has no third floor. The doors open onto a hallway identical to yours, but the wallpaper is older, and every door is open except one.",
+      "choices": [
+        { "label": "Step out and explore", "next": "n2a" },
+        { "label": "Stay in the elevator", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-third-floor/n2a.mp4",
+      "caption": "Every open apartment has your furniture — but the photos are wrong. Photos of you at ages you haven't reached. At the end of the hall, one closed door, a brass plate: your apartment number.",
+      "choices": [
+        { "label": "Open the closed door", "next": "n3a" },
+        { "label": "Study the photos", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-third-floor/n2b.mp4",
+      "caption": "The doors close. The elevator hums up, not down. The display counts floors that don't exist — 4, 5, 6 — and stops at 7. The doors open on a rooftop where dozens of people stand facing the same way. All of them are you.",
+      "choices": [
+        { "label": "Join the gathering", "next": "n3c" },
+        { "label": "Pry the doors shut", "next": "n3d" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-third-floor/n3a.mp4",
+      "caption": "Inside is your apartment — but the calendar reads your birthday, next year. On the table sits a contract bearing your signature. The ink is still wet. The pen is still warm.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-third-floor/n3b.mp4",
+      "caption": "The photos span decades — you at 40, 60, 80 — but in every one you stand in this same hallway. The last frame is empty. Written on the back, in your handwriting: 'finally.'",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-third-floor/n3c.mp4",
+      "caption": "They all turn in unison. The nearest one — you, decades older — whispers: 'The elevator only comes for one of us at a time. You're the newest.'",
+      "choices": []
+    },
+    "n3d": {
+      "video": "/videos/the-third-floor/n3d.mp4",
+      "caption": "The doors slam and the elevator plummets — you wake in your bed. Morning. Normal. Until the lobby elevator dings, and through the peephole you watch yourself step out.",
+      "choices": []
+    }
+  }
+}
