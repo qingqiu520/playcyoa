@@ -58,5 +58,11 @@
     "title": "The Third Floor",
     "genre": "horror",
     "description": "At 3:07 AM your elevator stops at a floor that isn't on the panel — your building has no third floor. The doors open onto your hallway, older, and every door stands open except one."
+  },
+  {
+    "slug": "the-last-delivery",
+    "title": "The Last Delivery",
+    "genre": "thriller",
+    "description": "Your last delivery of the night leads to an empty lot. The label reads: TO WHOEVER FINDS THIS. OPEN ME."
   }
 ]

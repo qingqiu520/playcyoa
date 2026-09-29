@@ -1,0 +1,53 @@
+{
+  "slug": "the-last-delivery",
+  "title": "The Last Delivery",
+  "genre": "thriller",
+  "description": "Your last delivery of the night leads to an empty lot. The package label reads only: 'TO WHOEVER FINDS THIS. OPEN ME.' And your phone just died.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-last-delivery/n1.mp4",
+      "caption": "Your last delivery of the night leads to an empty lot between two warehouses. The package label reads only: 'TO WHOEVER FINDS THIS. OPEN ME.' And your phone just died.",
+      "choices": [
+        { "label": "Open the package", "next": "n2a" },
+        { "label": "Take it back to the depot", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-last-delivery/n2a.mp4",
+      "caption": "Inside: a phone identical to yours — same model, same scratches — and it's ringing. You answer. Your own voice says: 'Don't take it back to the depot. They're waiting.'",
+      "choices": [
+        { "label": "Ask who's waiting", "next": "n3a" },
+        { "label": "Hang up and run", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-last-delivery/n2b.mp4",
+      "caption": "The depot should be lit until midnight — it's dark. Through the glass door you see your coworkers standing motionless, all facing the entrance. Waiting for you to come back.",
+      "choices": [
+        { "label": "Call the boss", "next": "n3c" },
+        { "label": "Drive away and call the police", "next": "n3d" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-last-delivery/n3a.mp4",
+      "caption": "'Me,' your voice says. 'I've done this three times now. Every version of you takes it back to the depot. Open the box again.' You look down. The package is already resealed.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-last-delivery/n3b.mp4",
+      "caption": "You throw the phone across the lot and drive — but the voice follows you through the car radio: 'You can't leave. The delivery is tonight. It always is.'",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-last-delivery/n3c.mp4",
+      "caption": "The boss picks up on the first ring: 'Where are you? Everyone left at six.' Behind you, the depot door slides open — and the figures inside were never people.",
+      "choices": []
+    },
+    "n3d": {
+      "video": "/videos/the-last-delivery/n3d.mp4",
+      "caption": "The police find an empty lot and a depot that's been closed for months — a courier company that doesn't exist. Except its logo is still on your uniform.",
+      "choices": []
+    }
+  }
+}
