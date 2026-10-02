@@ -64,5 +64,11 @@
     "title": "The Last Delivery",
     "genre": "thriller",
     "description": "Your last delivery of the night leads to an empty lot. The label reads: TO WHOEVER FINDS THIS. OPEN ME."
+  },
+  {
+    "slug": "the-last-colony-broadcast",
+    "title": "The Last Colony Broadcast",
+    "genre": "sci-fi",
+    "description": "You intercept a distress broadcast from the last human colony — and recognize your own voice asking for help. The colony was abandoned fifty years ago. A branching space opera AI adventure."
   }
 ]
