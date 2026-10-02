@@ -1,0 +1,53 @@
+{
+  "slug": "the-last-colony-broadcast",
+  "title": "The Last Colony Broadcast",
+  "genre": "sci-fi",
+  "description": "You intercept a distress broadcast from the last human colony — and recognize your own voice asking for help. The colony was abandoned fifty years ago. A branching space opera AI adventure.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-last-colony-broadcast/n1.mp4",
+      "caption": "At the edge of mapped space, your freighter catches a distress broadcast from the last human colony — abandoned fifty years ago. Then the speaker says your name in your own voice: 'If you can hear this, do not let them find me.'",
+      "choices": [
+        { "label": "Answer the broadcast", "next": "n2a" },
+        { "label": "Record it and keep flying", "next": "n2b" }
+      ]
+    },
+    "n2a": {
+      "video": "/videos/the-last-colony-broadcast/n2a.mp4",
+      "caption": "The channel opens on a woman in a cracked helmet. Her face is yours, older by decades. Behind her, the colony glows beneath an impossible red aurora: 'You have eleven minutes before the fleet arrives.'",
+      "choices": [
+        { "label": "Ask what the fleet wants", "next": "n3a" },
+        { "label": "Transmit your coordinates", "next": "n3b" }
+      ]
+    },
+    "n2b": {
+      "video": "/videos/the-last-colony-broadcast/n2b.mp4",
+      "caption": "You mute the transmission, but it begins playing through the ship's navigation system. A route appears to a star that does not exist on any chart — and the autopilot has already accepted it.",
+      "choices": [
+        { "label": "Follow the hidden route", "next": "n3c" },
+        { "label": "Wipe the route and jump away", "next": "n3d" }
+      ]
+    },
+    "n3a": {
+      "video": "/videos/the-last-colony-broadcast/n3a.mp4",
+      "caption": "'The fleet is not coming for us,' your older self says. 'It is coming to make sure the colony stays dead.' Behind her, thousands of lights wake beneath the surface — an army that has been waiting for your return.",
+      "choices": []
+    },
+    "n3b": {
+      "video": "/videos/the-last-colony-broadcast/n3b.mp4",
+      "caption": "The moment you transmit, the older version of you smiles with relief. Then every screen on your bridge displays the same message: COORDINATES RECEIVED. The colony was never calling you. It was baiting the fleet toward you.",
+      "choices": []
+    },
+    "n3c": {
+      "video": "/videos/the-last-colony-broadcast/n3c.mp4",
+      "caption": "The hidden route folds space around your ship. You emerge inside the colony's shield and find streets preserved exactly as they were fifty years ago — except every shop window displays a live image of your arrival.",
+      "choices": []
+    },
+    "n3d": {
+      "video": "/videos/the-last-colony-broadcast/n3d.mp4",
+      "caption": "You burn the route and make the jump. For one quiet second, the stars return. Then your ship's speakers whisper in your own voice: 'That was the version where you left us behind.'",
+      "choices": []
+    }
+  }
+}
