@@ -21,12 +21,12 @@ export const GENRES: GenreMeta[] = [
   {
     slug: "sci-fi",
     name: "Sci-Fi",
-    title: "AI Sci-Fi Choose Your Own Adventure — Interactive Space Stories",
+    title: "Space Opera CYOA & AI Sci-Fi Choose Your Own Adventure | PlayCYOA",
     description:
-      "Play AI sci-fi choose your own adventure stories with generated video scenes. Command a ship, contact an alien signal, and steer the plot yourself.",
-    h1: "AI Sci-Fi Choose Your Own Adventure",
+      "Play space opera CYOA and AI sci-fi choose your own adventure stories with generated video scenes. Command a starship, answer an alien signal, and choose what happens next.",
+    h1: "Space Opera CYOA — AI Sci-Fi Adventures",
     intro:
-      "A distress signal. A mutiny brewing on deck. A jump drive that should not exist. Pick a sci-fi adventure and every choice becomes a generated cinematic scene — you are not reading space opera, you are flying it.",
+      "A distress signal. A mutiny brewing on deck. A jump drive that should not exist. Play a space opera CYOA and turn every choice into a generated cinematic scene — command the ship, answer the alien signal, and steer the story yourself.",
   },
   {
     slug: "romance",
