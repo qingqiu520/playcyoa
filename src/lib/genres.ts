@@ -21,7 +21,7 @@ export const GENRES: GenreMeta[] = [
   {
     slug: "sci-fi",
     name: "Sci-Fi",
-    title: "Space Opera CYOA & AI Sci-Fi Choose Your Own Adventure | PlayCYOA",
+    title: "Space Opera CYOA & AI Sci-Fi Choose Your Own Adventure",
     description:
       "Play space opera CYOA and AI sci-fi choose your own adventure stories with generated video scenes. Command a starship, answer an alien signal, and choose what happens next.",
     h1: "Space Opera CYOA — AI Sci-Fi Adventures",
@@ -83,3 +83,4 @@ export const GENRES: GenreMeta[] = [
 export function getGenre(slug: string) {
   return GENRES.find((g) => g.slug === slug);
 }
+
