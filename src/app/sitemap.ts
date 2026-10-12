@@ -1,9 +1,10 @@
+import { getSiteUrl } from "~/lib/site";
 ﻿import type { MetadataRoute } from "next";
 import { listStories } from "~/lib/stories";
 import { GENRES } from "~/lib/genres";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const site = process.env.NEXT_PUBLIC_SITE_URL || "https://www.playcyoa.com";
+  const site = getSiteUrl();
   return [
     { url: site, changeFrequency: "weekly", priority: 1 },
     { url: `${site}/pricing`, changeFrequency: "monthly", priority: 0.5 },

@@ -1,3 +1,4 @@
+import { getSiteUrl } from "~/lib/site";
 ﻿import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import "./globals.css";
 import { GENRES } from "~/lib/genres";
 
 const inter = Inter({ subsets: ["latin"] });
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://www.playcyoa.com";
+const SITE = getSiteUrl();
 const NAME = process.env.NEXT_PUBLIC_WEBSITE_NAME || "PlayCYOA";
 
 export const metadata: Metadata = {
