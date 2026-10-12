@@ -12,6 +12,9 @@ export interface Story {
   genre: string;
   description: string;
   poster?: string;
+  seoTitle?: string;
+  introduction?: { heading: string; paragraphs: string[] }[];
+  relatedStories?: string[];
   start: string;
   nodes: Record<string, StoryNode>;
 }

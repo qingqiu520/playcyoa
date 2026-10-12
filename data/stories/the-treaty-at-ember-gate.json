@@ -1,0 +1,182 @@
+{
+  "slug": "the-treaty-at-ember-gate",
+  "title": "The Treaty at Ember Gate",
+  "genre": "sci-fi",
+  "description": "Play a free space opera CYOA at Ember Gate. Escort a civilian convoy or negotiate a ceasefire, then follow your choices to one of eight distinct endings.",
+  "seoTitle": "Space Opera CYOA: The Treaty at Ember Gate",
+  "introduction": [
+    {
+      "heading": "A space opera CYOA about a rescue and a treaty",
+      "paragraphs": [
+        "The Treaty at Ember Gate puts you in command of a relief frigate rather than an empire's flagship. A damaged star system is being evacuated, a military blockade controls its only exit, and a treaty gives your small crew a reason to intervene. The ships outside your window carry people who cannot wait for a perfect agreement. Your task is to decide what kind of help you can offer before the corridor closes. This free space opera CYOA tells a complete, original story through short video scenes and written narration.",
+        "The adventure focuses on responsibility under pressure. You can fly with the transports or meet the leaders who control the gate. Those routes reveal different information and ask different things of you. A rescue can consume the ship that makes it possible; a negotiation can protect passengers while leaving an uncomfortable agreement in place. You do not need knowledge of a fictional universe, previous episodes, or science-fiction terminology to understand the situation. Everything needed for a decision appears in the scene you are playing."
+      ]
+    },
+    {
+      "heading": "How to play the branching adventure",
+      "paragraphs": [
+        "Watch the opening clip and read the narration beneath it. When the clip finishes, two choices appear over the video. Select one to move to the next scene. On a phone, tap a choice; on a computer, click it. If your browser pauses automatic playback, use the video's play control. You can pause a scene while reading, and you can replay the clip before choosing. There is no timer for your decisions: the urgency belongs to the story, not to a countdown that forces you to tap.",
+        "A complete route contains four scenes and three decisions. The full adventure contains fifteen scenes and eight distinct endings. You will not see all fifteen scenes in one run because each decision takes you down a particular branch. At an ending, use Play again to return to the opening and try another route. The public story is ready to play without registration, a download, or a request to generate a new video. Replays use the same prepared scenes, so you can compare decisions without waiting for new content."
+      ]
+    },
+    {
+      "heading": "Make choices by considering who bears the cost",
+      "paragraphs": [
+        "Before choosing, look at what your crew can actually do and who would have to carry the risk. An escort decision concerns the transports immediately around your ship. A negotiating decision concerns access, authority, and the promises that might outlast the rescue. Some choices preserve your frigate; others spend its power or put its crew in danger. The labels describe your next action, while the narration gives the context. Follow the action that matches the captain you want to play, rather than searching for a hidden score.",
+        "Information is also a resource. A private conversation may give you an offer that a public hearing would never produce, while witnesses can make a promise harder to deny. Notice who can hear an agreement and who has to trust it. The story does not track an invisible morality meter, inventory, or combat statistic. Its consequences are written into the branch you select. Each ending explains what happened to the evacuation and what responsibility remained afterward, so the result is more than a mysterious final image."
+      ]
+    },
+    {
+      "heading": "Replay to compare consequences, without ending spoilers",
+      "paragraphs": [
+        "For a second run, change your opening decision to explore the other half of the adventure. For a closer comparison, keep the opening route and alter a later choice instead. This lets you distinguish a different approach from a different decision inside the same situation. The eight endings are separate outcomes, not collectible ranks, and the page does not reveal a preferred solution. You may value a complete evacuation, your crew's safety, accountable leadership, or a corridor that remains open. Those priorities can lead you to different conclusions.",
+        "The writing uses fleet politics, civilian rescue, and competing duties to create the scale of a space opera without requiring a long campaign. It is a short choose-your-own-adventure experience suitable for a break, but there is room to discuss whether a successful rescue leaves a fair settlement. When you finish, you can return to the sci-fi collection for another setting. This story stands on its own, so there is no required play order and no need to remember characters from the site's other adventures."
+      ]
+    }
+  ],
+  "relatedStories": [
+    "space-opera-the-hollow-fleet",
+    "the-last-colony-broadcast"
+  ],
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "video": "/videos/the-treaty-at-ember-gate/n1.mp4",
+      "caption": "Ember Gate hangs above a burned-orange planet, the only passage out of a collapsing star system. You command a small relief frigate carrying the last authenticated treaty between two rival fleets. Beyond your windows, civilian transports crowd the gate while Admiral Vey's silver warships lock its outer ring. A council envoy offers you a private docking channel. A transport captain begs you to stay with the evacuation. You cannot take both routes before the gate closes.",
+      "choices": [
+        {
+          "label": "Escort the civilian convoy",
+          "next": "n2"
+        },
+        {
+          "label": "Dock for treaty negotiations",
+          "next": "n3"
+        }
+      ]
+    },
+    "n2": {
+      "video": "/videos/the-treaty-at-ember-gate/n2.mp4",
+      "caption": "You place your frigate between the transports and the silver blockade. Their captain sends an unencrypted warning: the gate can carry three ships together, but the evacuation has four. On your tactical display, a hospital transport falls behind with damaged engines. You still have enough power to tow it, though towing will cost the speed that keeps your own ship safe. The other captains ask whether to wait or run.",
+      "choices": [
+        {
+          "label": "Tow the hospital transport",
+          "next": "n4"
+        },
+        {
+          "label": "Lead the faster ships through",
+          "next": "n5"
+        }
+      ]
+    },
+    "n3": {
+      "video": "/videos/the-treaty-at-ember-gate/n3.mp4",
+      "caption": "Inside the council station, Envoy Sera welcomes you beneath a window overlooking the stranded convoy. She offers a signed ceasefire if you hand over the treaty before addressing its terms. Through the glass, Admiral Vey approaches in a shuttle marked with a white stripe. A council aide locks the observation-room door and quietly switches off the public transmission feed. You can insist on witnesses or accept the private deal.",
+      "choices": [
+        {
+          "label": "Demand a witnessed negotiation",
+          "next": "n6"
+        },
+        {
+          "label": "Accept the private meeting",
+          "next": "n7"
+        }
+      ]
+    },
+    "n4": {
+      "video": "/videos/the-treaty-at-ember-gate/n4.mp4",
+      "caption": "Your tow cable pulls taut and the hospital transport's dark engines flare once, then fail. Its doctor signals that every patient is secured for the jump. Admiral Vey sends a final order: release the tow or the blockade will stop you. The treaty authorizes medical passage, but broadcasting it will reveal the council's promise to a fleet that was never told. Your crew waits for an order.",
+      "choices": [
+        {
+          "label": "Broadcast the medical-passage clause",
+          "next": "n8"
+        },
+        {
+          "label": "Trade your frigate for safe passage",
+          "next": "n9"
+        }
+      ]
+    },
+    "n5": {
+      "video": "/videos/the-treaty-at-ember-gate/n5.mp4",
+      "caption": "Three transports form up behind you. The hospital ship recedes, its navigation lights still blinking. A gap opens in the blockade when one silver cruiser rotates to cover your approach. Your navigator can send the convoy straight through that gap. Alternatively, you can turn back and use your frigate to jam the cruiser, giving the damaged ship one last chance to reach the gate. Either maneuver spends your remaining jump charge.",
+      "choices": [
+        {
+          "label": "Commit to the open corridor",
+          "next": "n10"
+        },
+        {
+          "label": "Turn back and jam the cruiser",
+          "next": "n11"
+        }
+      ]
+    },
+    "n6": {
+      "video": "/videos/the-treaty-at-ember-gate/n6.mp4",
+      "caption": "You reopen the station's public channel and put the treaty on the glass table between Sera and Vey. Both deny authorizing the blockade. Then a relay operator projects two order seals: one from each command, issued on the same morning. The captains outside hear everything. You can make the shared orders public evidence of a broken promise, or offer both leaders a face-saving withdrawal if they open the gate now.",
+      "choices": [
+        {
+          "label": "Publish the joint blockade orders",
+          "next": "n12"
+        },
+        {
+          "label": "Offer a monitored ceasefire",
+          "next": "n13"
+        }
+      ]
+    },
+    "n7": {
+      "video": "/videos/the-treaty-at-ember-gate/n7.mp4",
+      "caption": "Sera admits the gate's fuel reserve is nearly empty. The private agreement would move her council's transports first and leave the rest to the silver fleet. Vey offers a different arrangement: his engineers can extend the gate's life, but only if he takes command of the station. Your sealed treaty gives you authority to choose an emergency custodian. Signing either transfer will decide who controls passage after tonight.",
+      "choices": [
+        {
+          "label": "Choose the council evacuation deal",
+          "next": "n14"
+        },
+        {
+          "label": "Give engineers temporary gate control",
+          "next": "n15"
+        }
+      ]
+    },
+    "n8": {
+      "video": "/videos/the-treaty-at-ember-gate/n8.mp4",
+      "caption": "You transmit the medical clause and its two command seals across the convoy. Silver captains lower their weapon locks; several had relatives aboard the hospital transport. Your frigate tows it through while independent crews ferry the remaining civilians in smaller groups. Sera and Vey must explain the blockade to their own witnesses. The evacuation succeeds without surrendering your ship. By morning the treaty belongs to everyone who heard it, not just the two leaders. Ending: The Open Channel.",
+      "choices": []
+    },
+    "n9": {
+      "video": "/videos/the-treaty-at-ember-gate/n9.mp4",
+      "caption": "You release your escape shuttles and offer the empty frigate as collateral. Vey's crews attach their own tow lines to the hospital transport, and every waiting civilian ship receives passage. You and your crew cross in the last shuttle, watching your command vessel remain behind the silver blockade. The patients survive and the convoy is whole, but you arrive at the next port without a ship or a commission. Ending: A Captain Without a Ship.",
+      "choices": []
+    },
+    "n10": {
+      "video": "/videos/the-treaty-at-ember-gate/n10.mp4",
+      "caption": "Your navigator threads the three fast transports through the open corridor. The gate flashes behind you and the system falls silent. Thousands aboard those ships reach safety, and your frigate keeps enough power to join them. At the receiving port, you file the hospital ship's last coordinates beside the successful manifests. The saved captains thank you; the names on the missing manifest stay with you. You protected the ships you could reach, at a cost you chose not to hide. Ending: The Incomplete Manifest.",
+      "choices": []
+    },
+    "n11": {
+      "video": "/videos/the-treaty-at-ember-gate/n11.mp4",
+      "caption": "Your frigate turns across the silver cruiser's bow and floods its targeting sensors with false echoes. The hospital transport catches a departing tug and follows the others through. Your own jump charge drains before you can follow. Vey accepts your surrender under the treaty's prisoner clause; your crew remains alive aboard a guarded station. Beyond the gate, all four transports confirm arrival. You will need a later exchange to go home. Ending: The Last Ship Behind.",
+      "choices": []
+    },
+    "n12": {
+      "video": "/videos/the-treaty-at-ember-gate/n12.mp4",
+      "caption": "You release both signed blockade orders to the convoy and station archive. The civilian captains demand access, and silver officers refuse to keep firing locks on a passage their own command had guaranteed. The gate opens under a temporary crew committee. Both Sera and Vey lose control of the station before the last transport leaves. Your evidence saves the evacuation, but no permanent government remains to repair the gate. The survivors must build that agreement themselves. Ending: The Captains' Assembly.",
+      "choices": []
+    },
+    "n13": {
+      "video": "/videos/the-treaty-at-ember-gate/n13.mp4",
+      "caption": "You ask Sera and Vey to sign an immediate withdrawal in front of the convoy captains. Neither must confess, but independent monitors receive every gate-control code. Silver tugs help the damaged transport while council engineers stabilize the ring. All four ships pass; both leaders retain office under a ceasefire that can now be audited. You leave a functioning corridor and a fragile peace. Its survival depends on the witnesses continuing to watch. Ending: The Watched Peace.",
+      "choices": []
+    },
+    "n14": {
+      "video": "/videos/the-treaty-at-ember-gate/n14.mp4",
+      "caption": "You authorize the council's priority list. Its transports cross first, carrying families and fuel needed to establish a new port. The silver fleet holds the outer ring until the reserve expires, and ships without council credentials are stranded on the far side. Sera honors her promise to your crew and offers you a post in the new administration. You have secured an orderly escape for one side while accepting the border that excluded the other. Ending: The Divided Harbor.",
+      "choices": []
+    },
+    "n15": {
+      "video": "/videos/the-treaty-at-ember-gate/n15.mp4",
+      "caption": "You transfer emergency control to Vey's engineers, with the treaty's expiry date recorded in the station log. They fit reserve cells to the gate and bring every waiting transport through before dawn. Silver warships remain beside the repaired ring after the evacuation, calling their presence maintenance security. Your decision saves the convoy today; returning control will require another negotiation when the emergency expires. You send the log to every surviving captain so the deadline cannot disappear. Ending: The Borrowed Gate.",
+      "choices": []
+    }
+  }
+}

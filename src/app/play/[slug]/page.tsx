@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import Player from "~/components/Player";
 import { getStory, listStories } from "~/lib/stories";
@@ -16,7 +17,7 @@ export async function generateMetadata({
   const story = getStory(slug);
   if (!story) return {};
   return {
-    title: `${story.title} — AI ${story.genre} adventure`,
+    title: story.seoTitle || `${story.title} — AI ${story.genre} adventure`,
     description: story.description,
     alternates: { canonical: `/play/${story.slug}` },
   };
@@ -35,6 +36,9 @@ export default async function PlayStory({
   const endingCount = Object.values(story.nodes).filter(
     (n) => n.choices.length === 0
   ).length;
+  const relatedStories = (story.relatedStories || [])
+    .map((slug) => getStory(slug))
+    .filter((related): related is NonNullable<typeof related> => related !== null && related.slug !== story.slug);
   const faqs = [
     {
       q: `What is "${story.title}" about?`,
@@ -82,6 +86,35 @@ export default async function PlayStory({
           free.
         </p>
       </section>
+
+      {story.introduction?.map((section) => (
+        <section key={section.heading} className="mx-auto mt-10 max-w-2xl text-left">
+          <h2 className="mb-3 text-xl font-bold text-white">{section.heading}</h2>
+          {section.paragraphs.map((paragraph) => (
+            <p key={paragraph} className="mb-3 text-gray-400">{paragraph}</p>
+          ))}
+        </section>
+      ))}
+
+      {relatedStories.length > 0 && (
+        <section className="mx-auto mt-10 max-w-2xl text-left">
+          <h2 className="mb-3 text-xl font-bold text-white">More space opera adventures</h2>
+          <ul className="space-y-2">
+            {relatedStories.map((related) => (
+              <li key={related.slug}>
+                <Link href={`/play/${related.slug}`} className="text-accent underline">
+                  {related.title}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/adventures/sci-fi" className="text-accent underline">
+                Browse all sci-fi adventures
+              </Link>
+            </li>
+          </ul>
+        </section>
+      )}
 
       <section className="mx-auto mt-10 max-w-2xl text-left">
         <h2 className="mb-4 text-xl font-bold text-white">FAQ</h2>

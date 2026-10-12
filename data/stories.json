@@ -70,5 +70,11 @@
     "title": "The Last Colony Broadcast",
     "genre": "sci-fi",
     "description": "You intercept a distress broadcast from the last human colony — and recognize your own voice asking for help. The colony was abandoned fifty years ago. A branching space opera AI adventure."
+  },
+  {
+    "slug": "the-treaty-at-ember-gate",
+    "title": "The Treaty at Ember Gate",
+    "genre": "sci-fi",
+    "description": "Play a free space opera CYOA at Ember Gate. Escort a civilian convoy or negotiate a ceasefire, then follow your choices to one of eight distinct endings."
   }
 ]
